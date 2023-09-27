@@ -1,6 +1,4 @@
-<span style="font-size: 18px; font-weight: bold;">
-1. Apa itu django user creation form, dan jelaskan kelebihan dan kekurangannya
-</span>
+**1. Apa itu django user creation form, dan jelaskan kelebihan dan kekurangannya**
 
 Django `UserCreationForm` adalah sebuah form yang disediakan oleh `Django authenthication framework` untuk menghandle pembuatan *user* baru. `UserCreationForm` memiliki tiga *field* yaitu `username` untuk *username* pengguna, `password1` untuk *password* akun pengguna, dan `password2` untuk *password confirmation* akun pengguna.
 
@@ -15,9 +13,7 @@ Django `UserCreationForm` memiliki beberapa kelebihan dan kekurangan.
 1. Tampilan standar, `UserCreationForm` memiliki tampilan bawaan yang sangat standar, hal ini mungkin akan membuat website kita terlihat terlalu simpel dan tidak profesional. Jika kita ingin membuat tampilan *form* kita terlihat lebih menarik maka kita harus melakukan *customization* sendiri
 
 
-<span style="font-size: 18px; font-weight: bold;">
-2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
-</span>
+**2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?**
 
 Autentikasi adalah sebuah proses validasi/pembuktian terhadap identitas yang hendak memasuki sebuah sistem layanan. Autentikasi dilakukan agar kita dapat memastikan bahwa pengguna yang ingin masuk adalah pengguna dari akun tersebut dan bukan orang lain. 
 
@@ -35,9 +31,7 @@ Otorisasi adalah proses mengontrol apa saja yang diizinkan oleh pengguna yang te
 Autentikasi dan otorisasi merupakan kedua hal yang sangat penting, dengan autentikasi kita dapat memastikan kemanan data yang berada di akun tersebut, memastikan pengguna yang mengakses suatu akun adalah pemilik akun tersebut, dan melakukan pemblokiran akun apabila kita merasa terdapat aktivitas yang mencurigakan pada akun tersebut. Selain autentikasi, otorisasi juga merupakan hal yang sangat penting karena otorisasi dapat membatasi aksesibilitas suatu *user* pada *website* kita, hal ini dapat mencegah kebocoran data atau perubahan data yang tidak kita inginkan.
 
 
-<span style="font-size: 18px; font-weight: bold;">
-3.  Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
-</span>
+**3.  Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?**
 
 Cookies adalah file berukuran kecil yang disimpan di komputer *user* oleh *web server* ketika pengguna mengunjungi suatu *website*, *cookies* ini akan digunakan untuk menyimpan data tentang pengguna yang dapat digunakan kembali saat pengguna berinteraksi dengan *website* tersebut. 
 
@@ -50,16 +44,12 @@ Cara Django menggunakan *cookies* untuk mengelola data sesi pengguna adalah:
 Pada Django, kita dapat mengakses `attributes` dari suatu *sessions* menggunakan `HttpRequest` 
 
 
-<span style="font-size: 18px; font-weight: bold;">
-4.  Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
-</span>
+**4.  Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?**
 
 *Cookies* disimpan pada sisi klien, yang berarti data yang disimpan dalam *cookies* dapat diakses dan dimodifikasi oleh pengguna atau pihak ketiga jika tidak dienkripsi atau diotentikasi dengan benar. Hal ini dapat menyebabkan bahaya jika terdapat informasi penting yang tersimpan pada *cookies* tersebut dan *cookies* kita diakses oleh orang lain. Oleh karena itu, pastikan untuk mengenkripsi *cookies* kita agar tidak dapat dibaca oleh pihak yang tidak berwenang
 
 
-<span style="font-size: 18px; font-weight: bold;">
-5. Penjelasan step by step implementasi checklist
-</span>
+**5. Penjelasan step by step implementasi checklist**
 
 1. Jalankan *virtual environment*
 2. Membuat fungsi `register` pada `views.py` yang ada di subdirektori `main`
